@@ -8,7 +8,7 @@
 #######################################
 backend_redis_create() {
   print_banner
-  printf "${WHITE} 💻 Criando Banco Postgres...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Criando Redis & Banco Postgres...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
