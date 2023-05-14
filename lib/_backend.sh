@@ -65,12 +65,12 @@ DB_NAME=${instancia_add}
 JWT_SECRET=${jwt_secret}
 JWT_REFRESH_SECRET=${jwt_refresh_secret}
 
-REDIS_URI=redis://${mysql_root_password}@127.0.0.1:6379
+REDIS_URI=redis://${mysql_root_password}@127.0.0.1:${redis_port}
 REDIS_OPT_LIMITER_MAX=1
 REGIS_OPT_LIMITER_DURATION=3000
 
-USER_LIMIT=10000
-CONNECTIONS_LIMIT=10000
+USER_LIMIT=${max_user}
+CONNECTIONS_LIMIT=${max_whats}
 CLOSED_SEND_BY_ME=true
 
 [-]EOF
@@ -136,7 +136,7 @@ backend_update() {
   pm2 stop ${empresa_atualizar}-backend
   git pull
   cd /home/deploy/${empresa_atualizar}/backend
-  npm install
+  npm install --force
   npm update -f
   npm install @types/fs-extra
   rm -rf dist 
