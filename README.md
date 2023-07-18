@@ -1,4 +1,4 @@
-# Install S.I. Whaticket SaaS
+# Instalador Whaticket SaaS - Redis em Docker
 
 ```bash
 sudo apt -y update && apt -y upgrade
