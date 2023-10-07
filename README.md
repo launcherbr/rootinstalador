@@ -14,7 +14,7 @@ sudo apt install -y git && git clone https://github.com/launcherbr/instalador.gi
 
 | --- | Mínimo | Recomendado |
 | --- | --- | --- |
-| Node JS | 14.x | 16.x |
-| Ubuntu | 18.x | 20.x |
+| Node JS | 16.x | 16.x |
+| Ubuntu | 20.x | 20.x |
 | Memória RAM | 2Gb | 4Gb |  
 
