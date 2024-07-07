@@ -1,5 +1,9 @@
 # Instalador Whaticket SaaS - Redis em Docker
 
+Neste instalador o pm2 é no usuário root.
+
+* Atualização pelo terminal parece não funcionar.
+
 ```bash
 sudo apt -y update && apt -y upgrade
 ```
